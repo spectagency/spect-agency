@@ -1,0 +1,4 @@
+div.testimonial-standard-text strong, div.pricing-card_intro-text strong{
+  color: var(--semantic--text-color);
+  font-weight: 500;
+}
