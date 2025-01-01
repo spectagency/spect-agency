@@ -43,7 +43,6 @@ buttons.forEach((button) => {
       right: '0.25rem', // Using rem explicitly
       left: 'auto',
     }
-    '-=0.2'
     );
 
     // Final scale-up closer to padding change
@@ -54,8 +53,7 @@ buttons.forEach((button) => {
         opacity: 1, // Set opacity back to 1
         duration: 0.3,
         ease: 'power1.in',
-      },
-      0.2
+      }
     );
 
     // Scale back to 1
