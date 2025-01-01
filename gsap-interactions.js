@@ -45,12 +45,15 @@ buttons.forEach((button) => {
     }
     );
 
+    timeline.set(iconWrapper, {
+      opacity: 1,
+    });
+
     // Final scale-up closer to padding change
     timeline.to(
       iconWrapper,
       {
         scale: 1.1, // Scale to 1.1
-        opacity: 1, // Set opacity back to 1
         duration: 0.3,
         ease: 'power1.in',
       }
