@@ -33,18 +33,19 @@ buttons.forEach((button) => {
       }
     );
 
-    // Update .primary-button_icon-wrapper position instantly
+    // Ensure position and opacity changes occur after padding
     timeline.to(iconWrapper, {
-      right: '0.25rem', // Using rem explicitly
+      right: '0.25rem',
       left: 'auto',
-      duration: 0, // Instant update but respects the timeline
+      opacity: 0, // Ensure it’s hidden
+      duration: 0, // Instantaneous but respects sequence
     });
 
     // Reset opacity and scale before final scale-up
     timeline.to(iconWrapper, {
-      opacity: 1,
+      opacity: 1, // Set back to visible
       scale: 0, // Reset scale to 0
-      duration: 0, // Instant but respects the timeline
+      duration: 0, // Instantaneous but respects sequence
     });
 
     // Final scale-up closer to padding change
