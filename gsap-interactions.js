@@ -22,7 +22,7 @@ buttons.forEach((button) => {
       });
 
     //instant opacity to 0 after scaling down
-    timeline.to(iconWrapper, {
+    timeline.set(iconWrapper, {
       opacity: 0, 
       duration: 0,
     });
