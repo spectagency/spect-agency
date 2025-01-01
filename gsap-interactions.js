@@ -15,16 +15,16 @@ buttons.forEach((button) => {
     });
 
     // Icon wrapper scale down and fade out
-    timeline.to(
-      iconWrapper,
-      {
+    timeline.to(iconWrapper, {
         scale: 0, // Scale down to 0
-        opacity: 0, // Fade out
         duration: 0.3,
         ease: 'power1.out',
-      },
-      0.1 // Start slightly overlapping with the scale-up
-    );
+      });
+
+    timeline.to(iconWrapper, {
+      opacity: 0, //instant opacity to 0 after the scale down
+      duration: 0,
+    });
 
     // Padding animation for the button
     timeline.to(
