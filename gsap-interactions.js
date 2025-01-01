@@ -55,6 +55,7 @@ buttons.forEach((button) => {
         duration: 0.3,
         ease: 'power1.in',
       },
+      0.2
     );
 
     // Scale back to 1
