@@ -53,7 +53,9 @@ buttons.forEach((button) => {
       scale: 1.1, // Scale to 1.1
       duration: 0.3,
       ease: 'power1.in',
-    });
+    }
+    0.3           
+    );
 
     // Scale back to 1
     timeline.to(iconWrapper, {
