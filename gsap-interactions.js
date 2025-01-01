@@ -47,6 +47,7 @@ buttons.forEach((button) => {
 
     timeline.set(iconWrapper, {
       opacity: 1,
+      scale: 0,
     });
 
     // Final scale-up closer to padding change
