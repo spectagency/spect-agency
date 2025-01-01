@@ -14,15 +14,16 @@ buttons.forEach((button) => {
       ease: 'power1.in',
     });
 
-    // Icon wrapper scale down and fade out
+    // Icon wrapper scale down during .3 seconds
     timeline.to(iconWrapper, {
         scale: 0, // Scale down to 0
         duration: 0.3,
         ease: 'power1.out',
       });
 
+    //instant opacity to 0 after scaling down
     timeline.to(iconWrapper, {
-      opacity: 0, //instant opacity to 0 after the scale down
+      opacity: 0, 
       duration: 0,
     });
 
@@ -41,7 +42,9 @@ buttons.forEach((button) => {
     timeline.set(iconWrapper, {
       right: '0.25rem', // Using rem explicitly
       left: 'auto',
-    });
+    }
+    '-=0.2'
+    );
 
     // Final scale-up closer to padding change
     timeline.to(
@@ -52,7 +55,6 @@ buttons.forEach((button) => {
         duration: 0.3,
         ease: 'power1.in',
       },
-      '-=0.2' // Final scale-up overlaps with padding change
     );
 
     // Scale back to 1
